@@ -1,10 +1,9 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Text.Json;
-using System.Linq;
+
 
 namespace PaperlessHW.Function{
     class ExchangeRateProvider : IExchangeRateProvider

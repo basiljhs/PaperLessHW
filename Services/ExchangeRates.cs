@@ -1,10 +1,9 @@
-using System;
 using System.Collections.Generic;
-using System.Text.Json;
+using System.Linq;
 
 namespace PaperlessHW.Function{
 
-    using System.Linq;
+    
     public class ExchangeRates
     {
         public bool success { get; set; }
@@ -29,12 +28,12 @@ namespace PaperlessHW.Function{
                 minValue=int.MaxValue;
                 maxValue=0;
 
-                value.ToList().ForEach(a=>AddValue(a.Key,a.Value.First().Value));
+                value.ToList().ForEach(a=>AddValueToFlatDictionary(a.Key,a.Value.First().Value));
             }
            
         }
 
-        private void AddValue(string date,decimal value){
+        private void AddValueToFlatDictionary(string date,decimal value){
             ValuePerDates.Add(date,value);
             if(value>maxValue)
                 maxValue=value;
