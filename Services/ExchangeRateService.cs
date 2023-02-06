@@ -13,12 +13,7 @@ namespace PaperlessHW.Function{
 
         }
         
-        public DateTime GetCurrentTime()
-        {
-            return DateTime.UtcNow;
-        }
-
-
+      
         public async Task<string> GetMonthDictionaryAsync(string currency,string monthyear){
             var s=new Dictionary<int, string>();
             string message="";

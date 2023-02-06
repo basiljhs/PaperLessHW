@@ -8101,11 +8101,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/basil/WorkLocal/PaperlessHW/PaperlessHW.csproj",
+      "projectUniqueName": "/home/basil/WorkLocal/PLHW/PaperlessHW.csproj",
       "projectName": "PaperlessHW",
-      "projectPath": "/home/basil/WorkLocal/PaperlessHW/PaperlessHW.csproj",
+      "projectPath": "/home/basil/WorkLocal/PLHW/PaperlessHW.csproj",
       "packagesPath": "/home/basil/.nuget/packages/",
-      "outputPath": "/home/basil/WorkLocal/PaperlessHW/obj/",
+      "outputPath": "/home/basil/WorkLocal/PLHW/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/basil/.nuget/NuGet/NuGet.Config"

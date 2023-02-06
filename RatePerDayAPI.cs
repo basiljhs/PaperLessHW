@@ -31,11 +31,6 @@ namespace PaperlessHW.Function
         }
 
         [FunctionName("RatePerDayAPI")]
-        [OpenApiOperation(operationId: "Run", tags: new[] { "name" })]
-        [OpenApiSecurity("function_key", SecuritySchemeType.ApiKey, Name = "code", In = OpenApiSecurityLocationType.Query)]
-        [OpenApiParameter(name: "currency", In = ParameterLocation.Path, Required = true, Type = typeof(string), Description = "The **Currency** parameter")]
-        [OpenApiParameter(name: "monthyear", In = ParameterLocation.Path, Required = true, Type = typeof(string), Description = "The **MonthYear** parameter")]
-        [OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "text/plain", bodyType: typeof(string), Description = "The OK response")]
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route ="{currency}/{monthyear}")] HttpRequest req,string currency,string monthyear)
         {         

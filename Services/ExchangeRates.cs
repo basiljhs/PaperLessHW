@@ -25,7 +25,7 @@ namespace PaperlessHW.Function{
             {
                 _rates=value;
                 ValuePerDates=new Dictionary<string, decimal>();
-                minValue=int.MaxValue;
+                minValue=decimal.MaxValue;
                 maxValue=0;
 
                 value.ToList().ForEach(a=>AddValueToFlatDictionary(a.Key,a.Value.First().Value));
